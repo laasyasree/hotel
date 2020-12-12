@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book a room</title>
+</head>
+<body>
+    <h1>Booking</h1>
+    <h2>Book a room</h2>
+    <form id="create-lend-lists" action="bookings" method="POST">
+        <div>
+        <label for="customer_id-input">Customer ID</label>
+        <input type="String" id="customer_id-input" name="customerID"/>
+        <br/>
+        <label for="room_id-input">Room ID</label>
+        <input type="String" id="room_id-input" name="roomID"/>
+        <br/>
+  <label for="checkIn-input">Check In</label>
+        <input type="date" id="checkIn-input" name="checkIn"/>
+        <br/>
+  <label for="checkOut-input">Check Out</label>
+        <input type="date" id="checkOut-input" name="checkOut"/>
+        <br/>
+    </div>
+        <input type="submit" value="create" id="submit-button"/>
+    </form>
+
+
+</body>
+</html>

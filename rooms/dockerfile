@@ -1,0 +1,10 @@
+FROM node:current-slim
+WORKDIR /usr/src/app 
+COPY . .
+RUN npm install
+EXPOSE 3000
+RUN npm install mongodb
+RUN npm install mongoose
+RUN apk add --no-cache bash
+CMD ["node","rooms.js"]
+
